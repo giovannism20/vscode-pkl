@@ -1,0 +1,25 @@
+{
+  "name": "pkl-visual-studio-code",
+  "displayName": "PKL for Visual Studio Code",
+  "description": "Visual Studio Code PKL Language Support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pkl",
+      "aliases": ["pkl", "pkl"],
+      "extensions": [".pkl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pkl",
+      "scopeName": "source.pkl",
+      "path": "./syntaxes/pkl.tmLanguage.json"
+    }]
+  }
+}
